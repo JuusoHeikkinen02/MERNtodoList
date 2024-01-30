@@ -18,10 +18,10 @@ app.listen(port, () => console.log(`Server is running on port ${port}`));
 const MONGO_URI = 'mongodb://0.0.0.0:27017/todo';
 mongoose.connect(MONGO_URI)
     .then(() =>{
-        console.log('Connected to MongoDb');
+        console.log('Connected to MongoDB');
     })
     .catch((error) => {
-        console.error('Error connectin to MongoDB', error);
+        console.error('Error connecting to MongoDB', error);
     })
 
     
